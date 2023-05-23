@@ -44,7 +44,7 @@
 		  <!-- Content Wrapper. Contains page content -->
 		  <div class="content-wrapper">
 			<div class="container">
-			
+			tes
 			<?php
 				/*echo json_encode($all_data);
 				$json = json_encode($all_data);
