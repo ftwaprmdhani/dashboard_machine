@@ -115,7 +115,7 @@
 					if($bb < $value && $value < $ba){?>
 						<img style="width: <?= $width_all_machine?>; height: <?= $height_all_machine?>;" src="{{ asset('assets-admin-lte/dist/img/bg-green.png') }}"></a>
 					<?php } else {?>
-						<img class="blink_" style="width: <?= $width_all_machine?>; height: <?= $height_all_machine?>;" src="{{ asset('assets-admin-lte/dist/img/bg-yellow.png') }}"></a>
+						<img style="width: <?= $width_all_machine?>; height: <?= $height_all_machine?>;" src="{{ asset('assets-admin-lte/dist/img/bg-yellow.png') }}"></a>
 					<?php }
 
 					// modal(tampil data dari mesin yg di klik)
