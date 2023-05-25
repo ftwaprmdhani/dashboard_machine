@@ -21,7 +21,7 @@
 		  <link rel="stylesheet" href="{{ asset('assets-admin-lte/dist/css/adminlte.min.css') }}">
     </head>
     <body class="hold-transition layout-top-nav">
-		<div class="wrapper">
+		<div class="wrapper" >
 
 		  <!-- Navbar -->
 		  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
