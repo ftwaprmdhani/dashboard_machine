@@ -27,7 +27,7 @@
 		  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
 			<div class="container-fluid">
 			  <a href="../../index3.html" class="navbar-brand">
-				<img src="{{ asset('assets-admin-lte/dist/img/tmmin-logo.jpg') }}" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+				<img src="{{ asset('assets-admin-lte/dist/img/toyota-logo.png') }}" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
 				<span class="brand-text font-weight-light"></span>
 			  </a>
 
