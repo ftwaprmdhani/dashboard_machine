@@ -44,7 +44,6 @@
 		  <!-- Content Wrapper. Contains page content -->
 		  <div class="content-wrapper">
 			<div class="container">
-			tes
 			<?php
 				/*echo json_encode($all_data);
 				$json = json_encode($all_data);
@@ -61,7 +60,7 @@
 			
 			
 			</div>
-			<img src="{{ asset('assets-admin-lte/dist/img/bg-dashboard.png') }}" style="width: 100%; height: 500px; <?= $padding_machine1 ?>;">
+			<img src="{{ asset('assets-admin-lte/dist/img/bg-default.png') }}" style="width: 100%; height: 500px; <?= $padding_machine1 ?>;">
 			<!-- /.content -->
 		  </div>
 		  <!-- /.content-wrapper -->
