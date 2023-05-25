@@ -19,35 +19,32 @@
 		  <link rel="stylesheet" href="{{ asset('assets-admin-lte/plugins/jqvmap/jqvmap.min.css') }}">
 		  <!-- Theme style -->
 		  <link rel="stylesheet" href="{{ asset('assets-admin-lte/dist/css/adminlte.min.css') }}">
-
-		  
     </head>
-    <body class="hold-transition layout-top-nav" onload="startTime()">
-		<div class="wrapper">
+    <body class="hold-transition layout-top-nav">
+		<div class="wrapper" >
 
 		  <!-- Navbar -->
-		  <nav class="main-header navbar navbar-light navbar-white justify-content-center">
+		  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
 			<div class="container-fluid">
-			  <a href="../../index3.html" class="navbar-brand order-0 mr-auto">
+			  <a href="../../index3.html" class="navbar-brand">
 				<img src="{{ asset('assets-admin-lte/dist/img/toyota-logo.png') }}" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
 				<span class="brand-text font-weight-light"></span>
 			  </a>
-			  <h4><span class="font-weight-bold">Monitoring Dashboard Machine</span></h4>
+
+
 			  <!-- Right navbar links -->
-			  <div class="ml-auto">
-			  	<span style="font-size: 12px;">
-				  <div>	Date: <?= date('Y-m-d') ?></div>
-				  <div id="time"></div>
-				</span>
-			  </div>
+			  <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+				
+				
+			  </ul>
 			</div>
 		  </nav>
 		  <!-- /.navbar -->
 
 		  <!-- Content Wrapper. Contains page content -->
-		  <div class="content-wrapper">
+		  <div class="content-wrapper" style="background-color: white;">
 			<div class="container">
-				
+
 			<?php
 				$json = json_encode($all_data);
 				
@@ -127,6 +124,7 @@
 			
 			
 			</div>
+
 			<img src="{{ asset('assets-admin-lte/dist/img/bg-dashboard.png') }}" style="width: <?= $width_bg ?>; height: <?= $height_bg ?>;">
 			<!-- /.content -->
 		  </div>
@@ -194,28 +192,6 @@
 		<script>
 			function preview_machine(machine){
 				document.getElementById('machine_name').value = machine;
-			}
-			
-			function blink_(){
-				$('.blink_').fadeOut(500);
-				$('.blink_').fadeIn(500);
-			}
-			setInterval(blink_,1000);
-
-			function startTime() {
-				const today = new Date();
-				let h = today.getHours();
-				let m = today.getMinutes();
-				let s = today.getSeconds();
-				m = checkTime(m);
-				s = checkTime(s);
-				document.getElementById('time').innerHTML =  "Time: " + h + ":" + m + ":" + s;
-				setTimeout(startTime, 1000);
-			}
-
-			function checkTime(i) {
-				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-				return i;
 			}
 		</script>
     </body>
