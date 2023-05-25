@@ -42,7 +42,7 @@
 		  <!-- /.navbar -->
 
 		  <!-- Content Wrapper. Contains page content -->
-		  <div class="content-wrapper">
+		  <div class="content-wrapper" style="background-color: white;">
 			<div class="container">
 
 			<?php
